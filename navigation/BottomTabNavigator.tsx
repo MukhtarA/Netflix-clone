@@ -10,6 +10,7 @@ import TabTwoScreen from '../screens/TabTwoScreen';
 import {BottomTabParamList, HomeParamList, TabTwoParamList} from '../types';
 import NotFoundScreen from "../screens/NotFoundScreen";
 import HomeScreen from '../screens/HomeScreen/index';
+import MovieDetailsScreen from "../screens/MovieDetailsScreen";
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -62,10 +63,17 @@ function HomeNavigator() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
-        name="HomeScreen"
-        component={HomeScreen}
-        options={{ headerShown: false }}
+        name="MovieDetailsScreen"
+        component={MovieDetailsScreen}
+        options={{
+            title: '',
+        }}
       />
+        <HomeStack.Screen
+            name="HomeScreen"
+            component={HomeScreen}
+            options={{ headerShown: false }}
+        />
     </HomeStack.Navigator>
   );
 }

@@ -1,3 +1,5 @@
+import MovieDetailsScreen from "./screens/MovieDetailsScreen";
+
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
@@ -12,6 +14,7 @@ export type BottomTabParamList = {
 
 export type HomeParamList = {
   HomeScreen: undefined;
+  MovieDetailsScreen: undefined;
 };
 
 export type TabTwoParamList = {
