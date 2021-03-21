@@ -13,11 +13,11 @@ const styles = StyleSheet.create({
     match: {
         color: '#9de589',
         fontWeight: 'bold',
-        marginRight: 5,
+        marginRight: 10,
     },
     year: {
         color: '#8c8c8c',
-        marginRight: 5,
+        marginRight: 10,
 
     },
     ageContainer: {
@@ -26,12 +26,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 5,
         paddingHorizontal: 5,
-        marginRight: 5,
+        marginRight: 10,
     },
     age:{
         color: '#000000',
         fontWeight: 'bold',
-
     },
     playButton: {
         backgroundColor: '#fff',
